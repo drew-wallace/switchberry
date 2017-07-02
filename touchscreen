@@ -1,0 +1,8 @@
+#!/bin/bash
+lcd=$(cat /boot/config.txt | awk -F '[=]' '/display_default_lcd/{print $2}' | awk '{print $1}')
+if [ $lcd -eq 1 ]; then
+        xinput enable "FT5406 memory based driver"
+        sudo killall python3
+else
+        xinput enable "pointer:python-uinput"
+fi

@@ -1,0 +1,31 @@
+#!/bin/bash
+
+if [[ -z $1 || -z $2 ]]; then
+  echo 'Need Parsec username and password like this: ./6-parsec username password'
+  exit 1
+fi
+
+#install Parsec
+wget https://s3.amazonaws.com/parsec-build/package/parsec-rpi.deb
+sudo dpkg -i parsec-rpi.deb
+echo "${1}
+${2}
+y
+0" | parsec
+# sign into parsec and save credentials
+cat << 'EOF' > .parsec/controller.txt
+050000007e0500000820000001000000,Joy-Con(s),platform:Linux,x:b3,a:b0,b:b1,y:b2,back:b8,guide:b10,start:b9,dpleft:b16,dpdown:b15,dpright:b17,dpup:b14,leftshoulder:b4,lefttrigger:b6,rightshoulder:b5,righttrigger:b7,leftstick:b11,rightstick:b12,leftx:a0,lefty:a1,rightx:a2,righty:a3,
+EOF
+chmod +x start-parsec
+chmod +x parsec
+cat << 'EOF' > Desktop/Parsec.desktop
+[Desktop Entry]
+Name=Parsec
+Comment=My custom Parsec launcher
+Icon=/usr/share/pixmaps/openbox.xpm
+Exec=lxterminal -t "Running all the things" --working-directory=/home/pi/ -e ./parsec
+Type=Application
+Encoding=UTF-8
+Terminal=false
+Categories=None;
+EOF

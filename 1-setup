@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "gpu_mem=128
+audio_pwm_mode=2
+display_default_lcd=1" | sudo tee -a /boot/config.txt
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get dist-upgrade -y
+sudo apt-get install -y vim git python-dev python-setuptools
+sudo easy_install rpi.gpio
+git clone https://github.com/craic/pi_power.git
+sed -i 's/  green_constant()/  # green_constant()/g' pi_power/pi_power_leds.py
+sed -i 's/# yellow_constant()/yellow_constant()/g' pi_power/pi_power_leds.py
+sed -i 's/exit 0/\/home\/pi\/pi_power_leds.py \&\nexit 0/g' /etc/rc.local
+sed -i 's/exit 0/\/home\/pi\/pi_power.py \&\nexit 0/g' /etc/rc.local
+sudo reboot

@@ -1,0 +1,6 @@
+sudo raspi-config
+# Change password (1)
+# Change hostname if you want (2)
+# Change locale/timezone/keyboard/wifi region in Localisation (4)
+# Enable ssh in Interfacing (5)
+# Disable terminal, enable hardware for Serial interfacing (5)

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# fix wifi
+sudo apt-get install -y build-essential dkms bc vim libncurses5-dev
+
+git clone https://github.com/notro/rpi-source.git
+cd rpi-source
+chmod +x rpi-source
+sudo ./rpi-source
+cd ..
+
+git clone https://github.com/brandon-bailey/rtl8822bu.git
+cd rtl8822bu
+
+sed -i 's/CONFIG_PLATFORM_I386_PC = y/CONFIG_PLATFORM_I386_PC = n/g' Makefile
+sed -i 's/CONFIG_PLATFORM_ARM_RPI = n/CONFIG_PLATFORM_ARM_RPI = y/g' Makefile
+
+sudo make
+sudo make install
+
+#sudo sed -i 's/iface eth0 inet manual/iface eth0 inet dhcp/g' /etc/network/interfaces
+#sudo sed -i 's/iface wlan0 inet manual/iface wlan0 inet dhcp/g' /etc/network/interfaces
+#sudo echo 'network={\n\tssid="SSID-GOES-HERE"\n\tpsk="WIFI-PASSWORD-GOES-HERE"\n}' >> /etc/wpa_supplicant/wpa_supplicant.conf
+
+sudo reboot

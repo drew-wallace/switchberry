@@ -1,0 +1,6 @@
+#!/bin/bash
+lcd=$(cat /boot/config.txt | awk -F '[=]' '/display_default_lcd/{print $2}' | awk '{print $1}')
+if [ $lcd -eq 0 ]; then
+        xinput disable "FT5406 memory based driver"
+        sudo ./touchpad &
+fi

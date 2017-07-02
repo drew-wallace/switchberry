@@ -1,0 +1,12 @@
+#!/bin/bash
+
+sudo apt-get install -y python3 python3-pip
+git clone https://github.com/pimoroni/python-multitouch.git
+cd python-multitouch/library
+sudo python3 setup.py install
+cd
+chmod +x touchpad
+chmod +x hotcorners
+chmod +x touchscreen
+chmod +x start-touchscreen
+sudo pip3 install python-uinput pyudev rpi_backlight

@@ -1,0 +1,67 @@
+#!/bin/bash
+
+echo "3" | sudo select-editor
+sudo apt-get install -y --no-install-recommends xserver-xorg xinit
+sudo apt-get install -y --no-install-recommends raspberrypi-ui-mods lxterminal gvfs
+sudo apt-get install -y xvkbd xinput
+
+mkdir Desktop
+
+cat << 'EOF' > keyboard
+#!/bin/bash
+xvkbd -no-keypad -geometry 800x200+0+250
+EOF
+chmod +x keyboard
+cat << 'EOF' > Desktop/Keyboard.desktop
+[Desktop Entry]
+Name=Keyboard
+Comment=Keyboard launcher
+Icon=/usr/share/pixmaps/openbox.xpm
+Exec=/home/pi/keyboard
+Type=Application
+Encoding=UTF-8
+Terminal=false
+Categories=None;
+EOF
+
+cat << 'EOF' > hdmi_out
+#!/bin/bash
+sudo sed -i 's/display_default_lcd=1/display_default_lcd=0/g' /boot/config.txt
+sudo amixer cset numid=3 2
+sudo reboot
+EOF
+chmod +x hdmi_out
+cat << 'EOF' > Desktop/HDMI_Out.desktop
+[Desktop Entry]
+Name=HDMI Out
+Comment=Toggle HDMI output on
+Icon=/usr/share/pixmaps/openbox.xpm
+Exec=/home/pi/hdmi_out
+Type=Application
+Encoding=UTF-8
+Terminal=false
+Categories=None;
+EOF
+
+cat << 'EOF' > lcd_out
+#!/bin/bash
+sudo sed -i 's/display_default_lcd=0/display_default_lcd=1/g' /boot/config.txt
+sudo amixer cset numid=3 1
+sudo reboot
+EOF
+chmod +x lcd_out
+cat << 'EOF' > Desktop/LCD_Out.desktop
+[Desktop Entry]
+Name=LCD Out
+Comment=Toggle LCD output on
+Icon=/usr/share/pixmaps/openbox.xpm
+Exec=/home/pi/lcd_out
+Type=Application
+Encoding=UTF-8
+Terminal=false
+Categories=None;
+EOF
+
+echo "@/home/pi/start-touchscreen" | tee -a .config/lxsession/LXDE-pi/autostart
+
+sudo reboot
