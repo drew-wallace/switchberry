@@ -1,0 +1,3 @@
+#!/bin/bash
+./pi_power/pi_power_leds.py &
+./pi_power/pi_power.py &

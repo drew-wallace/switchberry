@@ -10,6 +10,4 @@ sudo easy_install rpi.gpio
 git clone https://github.com/craic/pi_power.git
 sed -i 's/  green_constant()/  # green_constant()/g' pi_power/pi_power_leds.py
 sed -i 's/# yellow_constant()/yellow_constant()/g' pi_power/pi_power_leds.py
-sed -i 's/exit 0/\/home\/pi\/pi_power_leds.py \&\nexit 0/g' /etc/rc.local
-sed -i 's/exit 0/\/home\/pi\/pi_power.py \&\nexit 0/g' /etc/rc.local
 sudo reboot
