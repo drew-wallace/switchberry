@@ -1,8 +1,8 @@
-# The SwitchBerry Guide
-A guide to setting up the SwitchBerry
+# The SwitchBerry Setup Guide
+The SwitchBerry is a mobile PC game streaming device inspired by the Nintendo Switch and made from a Raspberry Pi. The goal was to play my PC games on the go, mouse and keyboard free, with little to no latency, and a steady frame rate.
 
 ## Credits
-I did not do this project alone. I was helped by friends and family and am so grateful that I feel the credits should come first.
+I did not do this project alone. I was helped by friends, family, and the Parsec community. Because of how awesome everyone has been, I feel the credits should come first.
 
   - My wife: for lettimg me spend a chunk of change and most of my free time for the past month on this!
   - @CBNathanael#5078 from the Parsec Discord: Helped all throughout the project. We bounced ideas off each other. He helped me visualize things. Most notably he helped with the power circuit planning and gave me a visual diagram of how to hook it all up.
