@@ -76,11 +76,11 @@ DISCLAIMER: If you deviated from the hardware listed above, mainly the touchscre
 1. Plug in Pi AC adapter to turn on the Pi
 1. Log in to the Pi with username: `pi`, password: `raspberry`
 1. Run `sudo raspi-config`
-  1. Change password
-  1. Change hostname if you want
-  1. Change locale/timezone/keyboard/wifi region in Localisation
-  1. Enable ssh in Interfacing
-  1. Disable terminal, enable hardware for Serial in Interfacing
+   1. Change password
+   1. Change hostname if you want
+   1. Change locale/timezone/keyboard/wifi region in Localisation
+   1. Enable ssh in Interfacing
+   1. Disable terminal, enable hardware for Serial in Interfacing
 1. Run `sudo apt-get install -y git`
 1. Run `git clone https://github.com/drew-wallace/switchberry.git`
 1. Run `mv switchberry/* ./`
@@ -100,9 +100,9 @@ DISCLAIMER: If you deviated from the hardware listed above, mainly the touchscre
 1. When the Pi comes back on, it should load the Desktop environment. Open a terminal and run `chmod +x ./6-parsec`
 1. Run `sudo ./6-parsec username password` where `username` is your e-mail you sign into Parsec with, and password is your Parsec password
 1. For both Joy-Cons:
-  1. Long press the Joy-Con sync button until the LEDs start to flash back and forth
-  1. Touch the Bluetooth Icon on the taskbar
-  1. Touch the Joy-Con entry in the list when it pops up and pair it
+   1. Long press the Joy-Con sync button until the LEDs start to flash back and forth
+   1. Touch the Bluetooth Icon on the taskbar
+   1. Touch the Joy-Con entry in the list when it pops up and pair it
 1. Touch the network icon in the taskbar
 1. Touch your WiFi access point
 1. Double tap the Keyboard shortcut on the Desktop
