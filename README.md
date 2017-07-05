@@ -40,6 +40,8 @@ I did not do this project alone. I was helped by friends, family, and the Parsec
   - [E-Projects 10EP514330R 330 Ohm Resistors, 1/4 W, 5% (Pack of 10)](https://www.amazon.com/gp/product/B00CVZ4134/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)
   - [E-Projects 10EP5146K80 6.8k Ohm Resistors, 1/4 W, 5% (Pack of 10)](https://www.amazon.com/gp/product/B00CVZ4CLU/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
   - 2 x [Schmartboard Inc. 9" Male to Female Jumper Wires with Headers](http://www.microcenter.com/product/420048/9_Male_to_Female_Jumper_Wires_with_Headers)
+  - [Kingwin 80 Piece Assorted Notebook Replacement Screw Kit](http://www.microcenter.com/product/429404/80_Piece_Assorted_Notebook_Replacement_Screw_Kit)
+  - Some M3 screws... (TODO)
   - [Tactile Switch Buttons (6mm tall) x 10 pack](https://www.adafruit.com/product/1490) <-- I don't recommend these for how I mounted mine
   - Solder
   - Soldering Iron
@@ -55,7 +57,16 @@ I did not do this project alone. I was helped by friends, family, and the Parsec
   - [Etcher](https://etcher.io/)
   - You'll get the rest of it from this repo. After running the scripts from this repo, you'll be completely set up.
 
-## Putting it togther
+## Setting up the hardware
+1. 3D print this case
+1. Place screen into 3D printed housing
+1. Connect the touchscreen to the Pi by ribbon cable
+1. Connect a 5V GPIO pin to the 5V pin on the touchscreen
+1. Connect a ground GPIO pin to the ground pin on the touchscreen
+
+## Setting up the software
+DISCLAIMER: If you deviated from the hardware listed above, mainly the touchscreen and wifi adapter, this won't work and you'll be on your own. I rely on a touchscreen driver for that specific touchscreen and a wifi driver for that specific dongle. Also, the bluetooth adapter I used is plug-and-play. If you choose a different one, and it's not plug-and-play or doesn't find the Joy-Cons, you're on your own.
+
 1. Download the latest Raspbian Lite image.
 1. Download Etcher
 1. Write the latest Raspbian Lite image to your SD card with Etcher.
@@ -63,3 +74,40 @@ I did not do this project alone. I was helped by friends, family, and the Parsec
 1. Plug in ethernet cable into Pi
 1. Plug in HDMI cable to Pi and TV
 1. Plug in Pi AC adapter to turn on the Pi
+1. Log in to the Pi with username: `pi`, password: `raspberry`
+1. Run `sudo raspi-config`
+  1. Change password
+  1. Change hostname if you want
+  1. Change locale/timezone/keyboard/wifi region in Localisation
+  1. Enable ssh in Interfacing
+  1. Disable terminal, enable hardware for Serial in Interfacing
+1. Run `sudo apt-get install -y git`
+1. Run `git clone https://github.com/drew-wallace/switchberry.git`
+1. Run `mv switchberry/* ./`
+1. Run `chmod +x 1-setup`
+1. Run `sudo ./1-setup`
+1. When the Pi comes back to the login screen, login
+1. Run `chmod +x ./2-wifi`
+1. Run `sudo ./2-wifi`
+1. When the Pi comes back to the login screen, login
+1. Run `chmod +x ./3-touchscreen`
+1. Run `sudo ./3-touchscreen`
+1. Run `chmod +x ./4-joycons`
+1. Run `sudo ./4-joycons`
+1. Run `chmod +x ./5-desktop`
+1. Run `sudo ./5-desktop`
+1. Disconnect the HDMI cable.
+1. When the Pi comes back on, it should load the Desktop environment. Open a terminal and run `chmod +x ./6-parsec`
+1. Run `sudo ./6-parsec username password` where `username` is your e-mail you sign into Parsec with, and password is your Parsec password
+1. For both Joy-Cons:
+  1. Long press the Joy-Con sync button until the LEDs start to flash back and forth
+  1. Touch the Bluetooth Icon on the taskbar
+  1. Touch the Joy-Con entry in the list when it pops up and pair it
+1. Touch the network icon in the taskbar
+1. Touch your WiFi access point
+1. Double tap the Keyboard shortcut on the Desktop
+1. Enter your WiFi access point password
+1. Touch Ok
+1. Disconnect the ethernet cable
+
+You should now be completely set up.
