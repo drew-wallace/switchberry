@@ -81,6 +81,9 @@ DISCLAIMER: If you deviated from the hardware listed above, mainly the touchscre
    1. Change locale/timezone/keyboard/wifi region in Localisation
    1. Enable ssh in Interfacing
    1. Disable terminal, enable hardware for Serial in Interfacing
+   1. Select Finish
+   1. Agree to Reboot
+1. When the Pi comes back to the login screen, login
 1. Run `sudo apt-get install -y git`
 1. Run `git clone https://github.com/drew-wallace/switchberry.git`
 1. Run `mv switchberry/* ./`
