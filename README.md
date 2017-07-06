@@ -41,7 +41,7 @@ I did not do this project alone. I was helped by friends, family, and the Parsec
   - [E-Projects 10EP5146K80 6.8k Ohm Resistors, 1/4 W, 5% (Pack of 10)](https://www.amazon.com/gp/product/B00CVZ4CLU/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
   - 2 x [Schmartboard Inc. 9" Male to Female Jumper Wires with Headers](http://www.microcenter.com/product/420048/9_Male_to_Female_Jumper_Wires_with_Headers)
   - [Kingwin 80 Piece Assorted Notebook Replacement Screw Kit](http://www.microcenter.com/product/429404/80_Piece_Assorted_Notebook_Replacement_Screw_Kit)
-  - Some M3 screws... (TODO)
+  - 2 x M3 screws, 3 pack
   - [Tactile Switch Buttons (6mm tall) x 10 pack](https://www.adafruit.com/product/1490) <-- I don't recommend these for how I mounted mine
   - Solder
   - Soldering Iron
@@ -58,8 +58,23 @@ I did not do this project alone. I was helped by friends, family, and the Parsec
   - You'll get the rest of it from this repo. After running the scripts from this repo, you'll be completely set up.
 
 ## Setting up the hardware
-1. 3D print this case
+1. 3D print [this case](https://www.thingiverse.com/thing:1503651) but exclude the screen housing
+1. 3D print this [screen housing](https://www.thingiverse.com/thing:2336532)
 1. Place screen into 3D printed housing
+1. Secure L backets with 4 M3 screws, flat side facing outward, over the holes on the 3D printed screen housing
+1. Unscrew the screws from the riser screws on the touchscreen driver board and set them aside.
+1. Replace the bottom right riser screw with one of the scres from the previous step from the touchscreen driver. This is so it doesn't poke the battery
+1. Remove the top right riser screw.
+1. On your permaboard, create [this circuit](https://github.com/craic/pi_power) from the parts you have (TODO: insert diagram here). Read ahead to figure out where to place everything
+1. The button is going to go right outside the case next to the Powerboost 1000C. It will be secured with velcro. There should be a hole, if not it was probably just filled in during the 3D printing process and you can clear it out with a knife
+1. You may need to hot glue around the LED leads if it's exposed
+1. Place the completed permaboard circuit vertically next to the Pi such that the soldered components are facing the same direction as the Pi's USB ports
+1. Secure the Powerboost 1000C with 1 screw from the touchscreen driver board and another from the Kingwin 80 Piece Assorted Notebook Replacement Screw Kit
+1. Secure the pi in place with 2 screws from the touchscreen driver board
+1. Place a strip of velcro along the wall opposite of the Powerboost 1000C
+1. Place a piece of velcro on the battery and gently press the battery against the back wall
+1. Connect the battery to the Powerboot 1000C
+1. Place the LED between the battery and the Powerboost 1000C
 1. Connect the touchscreen to the Pi by ribbon cable
 1. Connect a 5V GPIO pin to the 5V pin on the touchscreen
 1. Connect a ground GPIO pin to the ground pin on the touchscreen
