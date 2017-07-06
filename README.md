@@ -43,6 +43,7 @@ I did not do this project alone. I was helped by friends, family, and the Parsec
   - [Kingwin 80 Piece Assorted Notebook Replacement Screw Kit](http://www.microcenter.com/product/429404/80_Piece_Assorted_Notebook_Replacement_Screw_Kit)
   - 2 x M3 screws, 3 pack
   - [Tactile Switch Buttons (6mm tall) x 10 pack](https://www.adafruit.com/product/1490) <-- I don't recommend these for how I mounted mine
+  - [Velleman Assorted Breadboard Jumper Wire Set 140 Pieces](http://www.microcenter.com/product/389976/Assorted_Breadboard_Jumper_Wire_Set_140_Pieces)
   - Solder
   - Soldering Iron
   - Hot glue stick
@@ -65,7 +66,7 @@ I did not do this project alone. I was helped by friends, family, and the Parsec
 1. Unscrew the screws from the riser screws on the touchscreen driver board and set them aside.
 1. Replace the bottom right riser screw with one of the scres from the previous step from the touchscreen driver. This is so it doesn't poke the battery
 1. Remove the top right riser screw.
-1. On your permaboard, create [this circuit](https://github.com/craic/pi_power) from the parts you have (TODO: insert diagram here). Read ahead to figure out where to place everything
+1. On your permaboard, create [this circuit](https://github.com/craic/pi_power) from the parts you have (TODO: insert diagram here). You may wish to use a temporary breadboard for testing purposes so you don't have to go through the hassle of desoldering if you messed up. Read ahead to figure out where to place the attached components
 1. The button is going to go right outside the case next to the Powerboost 1000C. It will be secured with velcro. There should be a hole, if not it was probably just filled in during the 3D printing process and you can clear it out with a knife
 1. You may need to hot glue around the LED leads if it's exposed
 1. Place the completed permaboard circuit vertically next to the Pi such that the soldered components are facing the same direction as the Pi's USB ports
