@@ -162,5 +162,5 @@ Now that it's complete I'm going to start thinking up how to make it smaller and
   - I want to see if I can drop the Pi 2B for a Pi Zero, but I'm not sure if they make a DSI connector or hat for connecting with the touchscreen. This would be 100% handheld instead of having an option to "dock" it and use HDMI. I would also need a sound solution since it doesn't have a headphone jack
   - Simplify the circuitry into a PCB for space and time saving
 
-## Donate?
+## Donate
 [Here's my Square Cash](https://cash.me/$DrewWallace). This wasn't a cheap project by any means. It's too complicated right now to sell, so if you're feeling generous, drop me some cash!
