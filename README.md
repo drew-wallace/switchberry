@@ -70,7 +70,7 @@ I did not do this project alone. I was helped by friends, family, and the Parsec
   - You'll get the rest of it from this repo. After running the scripts from this repo, you'll be completely set up.
 
 ## Setting up the hardware
-Note: Do software steps 1-9 first. Also, if you get confused with the layout of things, here's a [bunch of pictures](https://drive.google.com/drive/folders/0BwfA42Ks3I6nQzBUdE5FRTZLOUU?usp=sharing)
+### Note: Do software steps 1-9 first. Also, if you get confused with the layout of things, check out the pictures above.
 1. 3D print [this case](https://www.thingiverse.com/thing:1503651) but exclude the screen housing
 1. 3D print this [screen housing](https://www.thingiverse.com/thing:2336532)
 1. Place screen into 3D printed housing
