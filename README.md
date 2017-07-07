@@ -12,6 +12,7 @@ I did not do this project alone. I was helped by friends, family, and the Parsec
   - [Kane York (riking)](https://github.com/riking/joycon): for developing (and continuing to develope) the Joy-Con driver I'm using.
   - [Pimoroni Ltd (pimoroni)](https://github.com/pimoroni/python-multitouch): for making the touchscreen driver I'm using.
   - [Rob Jones (craic)](https://github.com/craic/pi_power): for making the power solution I'm using.
+  - @benjy_parsec#6335 the CEO of Parsec: for his generosity, encouragement, and availability to help.
   - Raspbery Pi Foundation: for making a small mobile computing solution that worked out wonderfully.
   - Parsec: for building the practically magic streaming solution that has such low latency to make the experience near flawless.
   - Nintendo: for making the Joy-Cons that power an awesome single player and even 2-player experience.
