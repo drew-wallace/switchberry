@@ -20,6 +20,17 @@ I did not do this project alone. I was helped by friends, family, and the Parsec
   - Amazon: for selling me the last few parts I needed and shipping them quickly.
   - Best Buy: for having the Joy-Cons in stock! Also for having an SD card that works with the Pi.
 
+## Media
+  - [Pictures](https://drive.google.com/drive/folders/0BwfA42Ks3I6nQzBUdE5FRTZLOUU?usp=sharing)
+  - Reddit posts:
+    - [First post in /r/raspberry_pi](https://www.reddit.com/r/raspberry_pi/comments/69ebmb/help_requested_for_project_piswitch/)
+    - [Reveal video in /r/raspberry_pi](https://www.reddit.com/r/raspberry_pi/comments/6l95bf/the_switchberry_a_mobile_pc_gaming_device_i_made/)
+    - [Reveal video in /r/gaming](https://www.reddit.com/r/gaming/comments/6l92ux/the_switchberry_a_mobile_pc_gaming_device_i_made/)
+    - [Reveal of Xbox One streaming in /r/gaming](https://www.reddit.com/r/gaming/comments/6lj1z0/i_used_my_switchberry_to_make_a_handheld_xbox_one/)
+  - Videos:
+    - [Reveal video on YouTube](https://youtu.be/VZErsaL_Czc)
+    - [Xbox One streaming video on YouTube](https://youtu.be/kBMi8Y2XeFc)
+
 ## Hardware
   - [Raspberry Pi 2B](http://www.microcenter.com/product/473292/Raspberry_Pi_2_Model_B)
   - [Raspberry Pi Micro USB Power Supply 5V1 2.5A - White](http://www.microcenter.com/product/462652/Micro_USB_Power_Supply_5V1_25A_-_White)
@@ -130,4 +141,26 @@ DISCLAIMER: If you deviated from the hardware listed above, mainly the touchscre
 1. Touch Ok
 1. Disconnect the ethernet cable
 
-You should now be completely set up.
+## How to use
+When you turn on the SwitchBerry, you will end up on the Desktop. There are 4 shortcuts for you to double tap:
+  - Keyboard: Opens the onscreen keyboard. This is helpful when connecting to a new WiFi access point
+  - LCD Mode: Enables the LCD screen and disables HDMI out. Also enables sound through the headphone jack and disables sound over HDMI
+  - HDMI Mode: Enables HDMI out and disables the LCD screen video. Turns the touchscreen into one large touchpad. Also enables sound through over HDMI and disables the sound through the headphone jack
+  - Parsec: Starts Parsec and chooses the first available server to stream from
+
+## The Story
+I've always wanted a really cool handheld gaming device. I had a GameBoy, PSP, and Nintendo DS growing up. I really liked the PSP the most because I could mod the heck out of it but also because they had more of the kind of games I like. Then I got into consoles by playing Xbox, Xbox 360, PS3, and now Xbox One. I'm also just now diving into PC gaming. My desire for a handheld console diminished because I enjoyed competitive multiplayer games and other single player and co-op games that I knew a handheld couldn't handle (no pun intended).
+
+One day, Microsoft announced the ability to stream the Xbox One to any Windows 10 device. I was excited! All I had to do was find a small enough tablet and I'd be good to go. But it wouldn't be the same. I'd carry around a tablet, and a controller when I already carried a Surface Pro 3. So I waited again, until I found NVIDIA Game Stream using Moonlight. They had an android app and I had an Android phone. My problem was I didn't have a gaming rig. I was planning on building one but didn't have the money yet. Again, I waited.
+
+Finally, one day I found Parsec. Their focus was on low latency and they supported AMD, Intel, and NVIDIA. My Surface had integrated graphics so I could test it out! It was buttery smooth. I then found out they made a Raspberry Pi version. It got me thinking, could I MAKE a handheld and use this app? I needed to see what other people had done. I found different tips about which Pi to use for mobile projects, what kind of battery life to expect, what screens I could use, but the one big question was the controller. I always imagined having to split an Xbox controller in half and just mounting it on the sides of a screen. I knew that would be difficult and ugly so I was hesitant. Then I saw the Nintendo Switch Joy-Cons. I found a video of some guy playing 2-player with the Joy-Cons in RetroPie. A plan was born.
+
+The idea that I could have a console/PC gaming experience in my hands remained a dream, until now. I went to Microcenter and bought a bunch of parts. I ordered some off Amazon as well. I grabbed the Joy-Cons from Best Buy because no one else around had them in stock at the time. Everything came together except the ability to join the Joy-Cons together as 1 controller. I tried multiple apps desigend for remapping controlls. Even the ones that advertised joining 2 devices as 1 joystick didn't work. I tried modifying the source of another app to get it to work. Nothing was working. Then I found a Joy-Con driver written by [Kane York (riking)](https://github.com/riking/joycon). After getting it to compile, it worked!
+
+Now that it's complete I'm going to start thinking up how to make it smaller and maybe add some features. For example:
+  - I want to embed the Joy-Con Charging Grip into my case so the Joy-Cons charge while on the SwitchBerry
+  - I want to see if I can drop the Pi 2B for a Pi Zero, but I'm not sure if they make a DSI connector or hat for connecting with the touchscreen. This would be 100% handheld instead of having an option to "dock" it and use HDMI. I would also need a sound solution since it doesn't have a headphone jack
+  - Simplify the circuitry into a PCB for space and time saving
+
+## Donate?
+[Here's my Square Cash](https://cash.me/$DrewWallace). This wasn't a cheap project by any means. It's too complicated right now to sell, so if you're feeling generous, drop me some cash!
