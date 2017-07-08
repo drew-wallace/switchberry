@@ -14,7 +14,7 @@ y
 0" | parsec
 # sign into parsec and save credentials
 cat << 'EOF' > .parsec/controller.txt
-050000007e0500000120000001000000,Joy-Con Pair,platform:Linux,x:b3,a:b0,b:b1,y:b2,back:b8,guide:b10,start:b9,dpleft:b15,dpdown:b14,dpright:b16,dpup:b13,leftshoulder:b4,lefttrigger:b6,rightshoulder:b5,righttrigger:b7,leftstick:b11,rightstick:b12,leftx:a2,lefty:a3,rightx:a4,righty:a5,
+050000007e0500000820000001000000,Joy-Con(s),platform:Linux,x:b3,a:b0,b:b1,y:b2,back:b8,guide:b10,start:b9,dpleft:b15,dpdown:b14,dpright:b16,dpup:b13,leftshoulder:b4,lefttrigger:b6,rightshoulder:b5,righttrigger:b7,leftstick:b11,rightstick:b12,leftx:a2,lefty:a3,rightx:a4,righty:a5,
 EOF
 chmod +x ./start-parsec
 chmod +x ./parsec
