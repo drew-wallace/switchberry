@@ -165,3 +165,5 @@ Now that it's complete I'm going to start thinking up how to make it smaller and
 
 ## Donate
 [Here's my Square Cash](https://cash.me/$DrewWallace). This wasn't a cheap project by any means. It's too complicated right now to sell, so if you're feeling generous, drop me some cash!
+
+Try it using my code and we’ll each get $5 from Square Cash when you send $5. [VCNTKRK](https://cash.me/app/VCNTKRK)
