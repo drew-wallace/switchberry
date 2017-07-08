@@ -12,7 +12,7 @@ export GOROOT_BOOTSTRAP=$GOROOT
 gvm install go1.8
 gvm use go1.8 --default
 
-mkdir -p ~/go/src
+mkdir -p ~/go/src/github.com/riking
 cat << "EOF" >> ~/.profile
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/go
@@ -21,7 +21,7 @@ source ~/.profile
 
 # cat /proc/bus/input/devices
 
-cd ~/go/src
+cd ~/go/src/github.com/riking
 git clone https://github.com/riking/joycon.git
 cd joycon/prog4
 go get ./...
