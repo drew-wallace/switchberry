@@ -62,7 +62,4 @@ Terminal=false
 Categories=None;
 EOF
 
-echo "@/home/pi/start-touchscreen" | tee -a .config/lxsession/LXDE-pi/autostart
-echo "@/home/pi/start-pi_power" | tee -a .config/lxsession/LXDE-pi/autostart
-
 sudo reboot

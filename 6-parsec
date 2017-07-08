@@ -5,6 +5,9 @@ if [[ -z $1 || -z $2 ]]; then
   exit 1
 fi
 
+echo "@/home/pi/start-touchscreen" | tee -a .config/lxsession/LXDE-pi/autostart
+echo "@/home/pi/start-pi_power" | tee -a .config/lxsession/LXDE-pi/autostart
+
 #install Parsec
 wget https://s3.amazonaws.com/parsec-build/package/parsec-rpi.deb
 sudo dpkg -i parsec-rpi.deb
