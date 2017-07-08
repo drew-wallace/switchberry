@@ -141,7 +141,10 @@ DISCLAIMER: If you deviated from the hardware listed above, mainly the touchscre
 1. For both Joy-Cons:
    1. Long press the Joy-Con sync button until the LEDs start to flash back and forth
    1. Touch the Bluetooth Icon on the taskbar
-   1. Touch the Joy-Con entry in the list when it pops up and pair it
+   1. Tap Add Device
+   1. Tap the Joy-Con entry in the list when it pops up
+   1. Tap Pair
+   1. Tap Ok
 1. Touch the network icon in the taskbar
 1. Touch your WiFi access point
 1. Enter your WiFi access point password

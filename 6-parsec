@@ -16,14 +16,14 @@ y
 cat << 'EOF' > .parsec/controller.txt
 050000007e0500000820000001000000,Joy-Con(s),platform:Linux,x:b3,a:b0,b:b1,y:b2,back:b8,guide:b10,start:b9,dpleft:b16,dpdown:b15,dpright:b17,dpup:b14,leftshoulder:b4,lefttrigger:b6,rightshoulder:b5,righttrigger:b7,leftstick:b11,rightstick:b12,leftx:a2,lefty:a3,rightx:a4,righty:a5,
 EOF
-chmod +x start-parsec
-chmod +x parsec
+chmod +x ./start-parsec
+chmod +x ./parsec
 cat << 'EOF' > Desktop/Parsec.desktop
 [Desktop Entry]
 Name=Parsec
 Comment=My custom Parsec launcher
 Icon=/usr/share/pixmaps/openbox.xpm
-Exec=lxterminal -t "Running all the things" --working-directory=/home/pi/ -e ./parsec
+Exec=/home/pi/parsec
 Type=Application
 Encoding=UTF-8
 Terminal=false
