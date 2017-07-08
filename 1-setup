@@ -10,6 +10,11 @@ sudo easy_install rpi.gpio
 git clone https://github.com/craic/pi_power.git
 sed -i 's/  green_constant()/  # green_constant()/g' pi_power/pi_power_leds.py
 sed -i 's/# yellow_constant()/yellow_constant()/g' pi_power/pi_power_leds.py
+chmod +x ./2-wifi
+chmod +x ./3-touchscreen
+chmod +x ./4-joycons
+chmod +x ./5-desktop
+chmod +x ./6-parsec
 chmod +x pi_power.py
 chmod +x pi_power_leds.py
 chmod +x start-pi_power

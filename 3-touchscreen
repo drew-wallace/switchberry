@@ -5,8 +5,8 @@ git clone https://github.com/pimoroni/python-multitouch.git
 cd python-multitouch/library
 sudo python3 setup.py install
 cd
-chmod +x touchpad
-chmod +x hotcorners
+chmod +x touchpad.py
+chmod +x hotcorners.py
 chmod +x touchscreen
 chmod +x start-touchscreen
 sudo pip3 install python-uinput pyudev rpi_backlight

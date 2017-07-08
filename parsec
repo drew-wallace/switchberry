@@ -1,11 +1,11 @@
 #!/bin/bash
 lcd=$(cat /boot/config.txt | awk -F '[=]' '/display_default_lcd/{print $2}' | awk '{print $1}')
 if [ $lcd -eq 1 ]; then
-        sudo ./touchpad &
+        sudo ./touchpad.py &
 fi
 xinput disable "FT5406 memory based driver"
 ./start-parsec &
-sudo ./hotcorners &
+sudo ./hotcorners.py &
 sudo screen -dm -S jcdriverScreen ./go/bin/jcdriver
 sleep 1
 xinput disable "pointer:python-uinput"

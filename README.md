@@ -1,6 +1,17 @@
 # The SwitchBerry Setup Guide
 The SwitchBerry is a mobile PC game streaming device inspired by the Nintendo Switch and made from a Raspberry Pi. The goal was to play my PC games on the go, mouse and keyboard free, with little to no latency, and a steady frame rate.
 
+## Table of Contents
+  - [Credits](#credits)
+  - [Media](#media)
+  - [Hardware](#hardware)
+  - [Software](#software)
+  - [Setting Up the Hardware](#setting-up-the-hardware)
+  - [Setting Up the Software](#setting-up-the-software)
+  - [How to use](#how-to-use)
+  - [The Story](#the-story)
+  - [Donate](#donate)
+
 ## Credits
 I did not do this project alone. I was helped by friends, family, and the Parsec community. Because of how awesome everyone has been, I feel the credits should come first.
 
@@ -70,7 +81,7 @@ I did not do this project alone. I was helped by friends, family, and the Parsec
   - [Etcher](https://etcher.io/)
   - You'll get the rest of it from this repo. After running the scripts from this repo, you'll be completely set up.
 
-## Setting up the hardware
+## Setting Up the Hardware
 ### Note: Do software steps 1-9 first. Also, if you get confused with the layout of things, check out the pictures above.
 1. 3D print [this case](https://www.thingiverse.com/thing:1503651) but exclude the screen housing
 1. 3D print this [screen housing](https://www.thingiverse.com/thing:2336532)
@@ -93,7 +104,7 @@ I did not do this project alone. I was helped by friends, family, and the Parsec
 1. Connect a 5V GPIO pin to the 5V pin on the touchscreen
 1. Connect a ground GPIO pin to the ground pin on the touchscreen
 
-## Setting up the software
+## Setting Up the Software
 DISCLAIMER: If you deviated from the hardware listed above, mainly the touchscreen and wifi adapter, this won't work and you'll be on your own. I rely on a touchscreen driver for that specific touchscreen and a wifi driver for that specific dongle. Also, the bluetooth adapter I used is plug-and-play. If you choose a different one, and it's not plug-and-play or doesn't find the Joy-Cons, you're on your own.
 
 1. Download the latest Raspbian Lite image.
@@ -117,30 +128,25 @@ DISCLAIMER: If you deviated from the hardware listed above, mainly the touchscre
 1. Run `git clone https://github.com/drew-wallace/switchberry.git`
 1. Run `mv switchberry/* ./`
 1. Run `chmod +x 1-setup`
-1. Run `sudo ./1-setup`
+1. Run `./1-setup`
 1. When the Pi comes back to the login screen, login
-1. Run `chmod +x ./2-wifi`
-1. Run `sudo ./2-wifi`
+1. Run `./2-wifi`
 1. When the Pi comes back to the login screen, login
-1. Run `chmod +x ./3-touchscreen`
-1. Run `sudo ./3-touchscreen`
-1. Run `chmod +x ./4-joycons`
-1. Run `sudo ./4-joycons`
-1. Run `chmod +x ./5-desktop`
-1. Run `sudo ./5-desktop`
+1. Run `./3-touchscreen`
+1. Run `./4-joycons`
+1. Run `./5-desktop`
 1. Disconnect the HDMI cable.
-1. When the Pi comes back on, it should load the Desktop environment. Open a terminal and run `chmod +x ./6-parsec`
-1. Run `sudo ./6-parsec username password` where `username` is your e-mail you sign into Parsec with, and password is your Parsec password
+1. When the Pi comes back on, it should load the Desktop environment. Tap the terminal icon
+1. Run `./6-parsec username password` where `username` is your e-mail you sign into Parsec with, and password is your Parsec password
 1. For both Joy-Cons:
    1. Long press the Joy-Con sync button until the LEDs start to flash back and forth
    1. Touch the Bluetooth Icon on the taskbar
    1. Touch the Joy-Con entry in the list when it pops up and pair it
 1. Touch the network icon in the taskbar
 1. Touch your WiFi access point
-1. Double tap the Keyboard shortcut on the Desktop
 1. Enter your WiFi access point password
 1. Touch Ok
-1. Disconnect the ethernet cable
+1. In the terminal, run `sudo reboot`
 
 ## How to use
 When you turn on the SwitchBerry, you will end up on the Desktop. There are 4 shortcuts for you to double tap:
@@ -166,4 +172,6 @@ Now that it's complete I'm going to start thinking up how to make it smaller and
 ## Donate
 [Here's my Square Cash](https://cash.me/$DrewWallace). This wasn't a cheap project by any means. It's too complicated right now to sell, so if you're feeling generous, drop me some cash!
 
-Try it using my code and we’ll each get $5 from Square Cash when you send $5. [VCNTKRK](https://cash.me/app/VCNTKRK)
+If you don't have Square Cash yet, here's a sweet deal:
+
+Sign up using my code ([VCNTKRK](https://cash.me/app/VCNTKRK)) and we’ll each get $5 from Square Cash when you send $5. So if we do the math, you send $5 to me and Square Cash gives you and me both $5. That means I get $10 and you spent $0.
