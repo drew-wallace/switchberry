@@ -65,7 +65,7 @@ I did not do this project alone. I was helped by friends, family, and the Parsec
   - 2 x [Schmartboard Inc. 9" Male to Female Jumper Wires with Headers](http://www.microcenter.com/product/420048/9_Male_to_Female_Jumper_Wires_with_Headers)
   - [Kingwin 80 Piece Assorted Notebook Replacement Screw Kit](http://www.microcenter.com/product/429404/80_Piece_Assorted_Notebook_Replacement_Screw_Kit)
   - 2 x M3 screws, 3 pack
-  - [Tactile Switch Buttons (6mm tall) x 10 pack](https://www.adafruit.com/product/1490) <-- I don't recommend these for how I mounted mine
+  - [Tactile Switch Buttons (6mm tall) x 10 pack](https://www.adafruit.com/product/1490) <-- I don't recommend these for how I mounted mine. [Here's an alternative](https://www.adafruit.com/product/1119).
   - [Velleman Assorted Breadboard Jumper Wire Set 140 Pieces](http://www.microcenter.com/product/389976/Assorted_Breadboard_Jumper_Wire_Set_140_Pieces)
   - Solder
   - Soldering Iron
@@ -75,6 +75,11 @@ I did not do this project alone. I was helped by friends, family, and the Parsec
   - HDMI cable
   - Ethernet cable for initial setup
   - TV or monitor with HDMI input for initial setup
+
+Here are some public wish lists at MicroCenter, Adafruit and Amazon for the items linked above:
+  - https://www.microcenter.com/InsiderAcct/PublicWishList.aspx?WishListID=QvbUUMDMv5ZyFTNfyXZ3vzphCObUaiT0&Email=lsH4iD%2bRux0a4ukKpBvboi98Z9mO6pyqoliy1ZhoGCnpBPl5tKSk%2bPwgvswnro%2bc
+  - http://www.adafruit.com/wishlists/454278
+  - https://www.amazon.com/hz/wishlist/ls/3UCG9IWSR71DN
 
 ## Software
   - [Raspbian Lite](https://www.raspberrypi.org/downloads/raspbian/)
