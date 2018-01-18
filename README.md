@@ -11,6 +11,7 @@ The SwitchBerry is a mobile PC game streaming device inspired by the Nintendo Sw
   - [How to use](#how-to-use)
   - [The Story](#the-story)
   - [Donate](#donate)
+  - [Help] (#help)
 
 ## Credits
 I did not do this project alone. I was helped by friends, family, and the Parsec community. Because of how awesome everyone has been, I feel the credits should come first.
@@ -189,3 +190,6 @@ Now that it's complete I'm going to start thinking up how to make it smaller and
 If you don't have Square Cash yet, here's a sweet deal:
 
 Sign up using my code ([VCNTKRK](https://cash.me/app/VCNTKRK)) and we’ll each get $5 from Square Cash when you send $5. So if we do the math, you send $5 to me and Square Cash gives you and me both $5. That means I get $10 and you spent $0.
+
+## Help
+If you have any questions or need some help, join us in the [SwitchBerry Discord Server](https://discord.gg/ARVj9r7). We'd be glad to help!
