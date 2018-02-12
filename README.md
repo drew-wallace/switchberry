@@ -19,7 +19,7 @@ I did not do this project alone. I was helped by friends, family, and the Parsec
   - My wife: for letting me spend a chunk of change and most of my free time for the past month on this!
   - @CBNathanael#5078 from the Parsec Discord: Helped all throughout the project. We bounced ideas off each other. He helped me visualize things. Most notably he helped with the power circuit planning and gave me a visual diagram of how to hook it all up.
   - My dad: for soldering the power circuit for me.
-  - My pastor: for 3D prining my case over and over as we tweaked the design and dialed in the tollerances.
+  - My pastor: for 3D printing my case over and over as we tweaked the design and dialed in the tollerances.
   - @Rysha#1207 from Parsec and the Parsec Discord: for helping me troubleshoot issues on my Pi with Parsec and my Joy-Cons.
   - [Kane York (riking)](https://github.com/riking/joycon): for developing (and continuing to develope) the Joy-Con driver I'm using.
   - [Pimoroni Ltd (pimoroni)](https://github.com/pimoroni/python-multitouch): for making the touchscreen driver I'm using.
