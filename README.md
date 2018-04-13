@@ -164,7 +164,7 @@ When you turn on the SwitchBerry, you will end up on the Desktop. There are 4 sh
   - HDMI Mode: Enables HDMI out and disables the LCD screen video. Turns the touchscreen into one large touchpad. Also enables sound through over HDMI and disables the sound through the headphone jack
   - Parsec: Starts Parsec and chooses the first available server to stream from
   - Hotcorners:
-    - Brightness: Touch the top left corner of the touchscreen. The screen should dim. Drag your finger to the left to increase the brightness.
+    - Brightness: Touch the top left corner of the touchscreen. The screen should dim. Drag your finger to the right to increase the brightness.
     - Volume: Touch the bottom left corner of the touchscreen. The volumee should go all the way down. Slowly drag your finger to the right to increase the volume.
     - Exit: Long press for 5sec the top right corner, then release to quite Parsec, close all running scripts, and get back to the desktop.
     - Joy-Con configuration: Long press for 5sec the bottom right corner, the release. The Joy-Cons will begin to flash the LEDs. At that point you can either click L + R to play with both controllers as player 1, or press SL + SR on each controller you want to use individually. The LEDs will indicate which player you are.
