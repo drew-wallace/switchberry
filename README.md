@@ -185,6 +185,8 @@ Now that it's complete I'm going to start thinking up how to make it smaller and
   - Simplify the circuitry into a PCB for space and time saving
 
 ## Donate
+[Here's my PayPal](https://www.paypal.me/drewwwallace)
+
 [Here's my Square Cash](https://cash.me/$DrewWallace). This wasn't a cheap project by any means. It's too complicated right now to sell, so if you're feeling generous, drop me some cash!
 
 If you don't have Square Cash yet, here's a sweet deal:
